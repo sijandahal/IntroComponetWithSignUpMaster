@@ -1,0 +1,229 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+ 
+  padding: 15%;
+  background: url(./images/bg-intro-desktop.png) hsl(0, 100%, 74%)  ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: inherit;
+}
+
+.details-container {
+  max-width: 480px;
+  padding: 0.5rem;
+  color: #ffffff;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 45px;
+  font-weight: bolder;
+  line-height: 60px;
+  align-items: center;
+  
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: inherit;
+}
+
+.form-container {
+  background: white;
+  width: 550px;
+  padding: 0.5rem;
+}
+.paracontainer {
+  color: white;
+  background: hsl(248, 32%, 49%);
+  position: relative;
+  top: -100px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px hsl(246, 25%, 77%);
+}
+.paracontainer p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.form {
+  padding: 0.25rem;
+  position: relative;
+  top: -70px;
+  margin-bottom: -70px;
+  box-shadow: 0px 5px 10px hsl(246, 25%, 77%);
+}
+
+input {
+  width: 100%;
+  padding: 10px 5px 14px 0px;
+  border-radius: 10px;
+  margin-left: 5;
+  border-color: hsl(246, 25%, 77%);
+}
+
+.form-group {
+  margin: 20px;
+}
+
+::placeholder {
+  color: black;
+  padding-left: 20px;
+  font-size: 10px;
+  margin-left: 20px;
+}
+
+.button {
+  background: hsl(154, 59%, 51%);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.lastparagraph {
+  text-align: center;
+  font-size: 10px;
+}
+
+.red {
+  color: hsl(0, 100%, 74%) ;
+  cursor: pointer;
+}
+
+/* mobile devices */
+
+@media only screen and (max-width:378px) {
+  body {
+    background: url(./images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+
+  }
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+  .container {
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  }
+  .details-container {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+ }
+
+  h1 {
+    
+    line-height: normal;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+   p {
+     font-size: 16px;
+     text-align: center;
+     padding: 0px;
+    margin: 0px;
+     line-height: normal;
+   }
+
+  .form-container {
+    width: 100%;
+    display: block;
+    margin-top: 140px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+ .button {
+   margin-bottom: 20px;
+ }
+}
+
+@media only screen and (max-width:678px) and (min-width:494px) {
+ .form-container {
+   margin: 0;
+   margin-top: 93px;
+   padding: 0px;
+ }
+
+ .form {
+   position: relative;
+   margin:0px;
+   padding: 0px;
+  top: 50px;
+  margin-top: -124px;
+}
+
+.paracontainer {
+  margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width:493px) and (min-width:379px)
+{
+  
+
+  body {
+    background: url(./images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column
+  }
+
+  .details-container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .paracontainer {
+    position: relative;
+    top: -80px;
+  }
+.form-container {
+    margin-top: 100px;
+    padding: 0px;
+    width: auto;
+}
+
+.button {
+  margin-bottom: 20px;
+}
+}
