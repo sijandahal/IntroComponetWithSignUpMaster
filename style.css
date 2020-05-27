@@ -165,7 +165,7 @@ body {
 
 /* mobile devices */
 
-@media (max-width:600px) {
+@media (max-width:700px) {
   body {
     background: url(./images/bg-intro-mobile.png) var(--primary-red);
     background-position: center;
