@@ -28,6 +28,7 @@
   </style>
 </head>
 
+
 <body>
   <div class="main__container"> 
 
@@ -40,37 +41,32 @@
     </div>
   </div>
 
-
   <div class="form__container">
     <h4> <span> Try it for free 7days </span> then $20/mo. thereafter</h4>
     <form class = "form" id = "form"> 
       
       <div class="form-control">
-        <input type="text" name="firstname" id="firstname" placeholder="FirstName" >
-        <div class = "message"> <h6>First Name Cannot be Empty </h6>
-        </div>
-        <img src="./images/icon-error.svg" alt="Error-Icon" class = "error1 error">
+        <input type="text" name="firstname" id="FirstName" placeholder="FirstName" >
+        <small> FirstName Cannot be Empty </small>
+        
+        <img src="./images/icon-error.svg" alt="Error-Icon" class = "iconerror1 iconerror" id = "iconerror1">
       </div>
 
       <div class="form-control">
         <input type="text" name="Lastname" id="LastName" placeholder="LastName" >
-        <div class = "message"> <h6>Last Name Cannot be Empty </h6>
-        </div>
-        <img src="./images/icon-error.svg" alt="Error-Icon" class = "error">
+        <small> LastName Cannot be Empty </small>
+        <img src="./images/icon-error.svg" alt="Error-Icon" class = "iconerror" id = "iconerrors">
       </div>
 
       <div class="form-control">
         <input type="email" name="email" id="email" placeholder="Email Address" >
-        <div class = "message"> <h6>Looks like this is not an email </h6>
-        </div>
-        <img src="./images/icon-error.svg" alt="Error-Icon" class = "error">
+        <small> Looks like this is not an email </small>  <img src="./images/icon-error.svg" alt="Error-Icon" class = "iconerror" id = "iconerrors">
       </div>
 
       <div class="form-control">
         <input type="password" name="password" id="password" placeholder="Password">
-        <div class = "message"> <h6>Password Name Cannot be Empty </h6>
-        </div>
-        <img src="./images/icon-error.svg" alt="Error-Icon" class = "error">
+        <small> Password cannot be empty</small>
+        <img src="./images/icon-error.svg" alt="Error-Icon" class = "iconerror" id = "iconerrors">
       </div>
 
       <div class="form-control">
@@ -95,6 +91,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

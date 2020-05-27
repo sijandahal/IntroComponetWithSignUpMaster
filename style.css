@@ -42,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   color : var(--color-white);
+  margin-right: 40px;
 }
 
 .main__container .details__container .details h1{
@@ -105,14 +106,14 @@ body {
   position: relative;
 }
 
-.form__container .form-control .error {
+.form__container .form-control .iconerror {
   position: absolute;
   top: 30px;
   right: 20px;
   display: none;
 } 
 
-.form__container .form-control .error1 {
+.form__container .form-control .iconerror1 {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -122,18 +123,34 @@ body {
 .form__container .form-control .message {
   margin-right : auto;
   color : var(--primary-red);
-  display: none;
+  visibility: hidden;
 }
 
-.form__container .form-control .message h6 {
+
+.form-control.sucess input {
+  border-color : #2ecc71; 
+}
+
+.form-control.error input {
+  border-color: var(--primary-red); 
+}
+
+.form-control small {
+  color: var(--primary-red);
   margin-top: 5px;
   margin-bottom: 15px;
   float: right;
   font-style: italic;
   font-weight: 400;
+  visibility: hidden;
+
+}
+.form-control.error small {
+  visibility: visible;
 }
 
-
+.form__container .form-control .message h6 {
+ }
 .form__container .form-control input::placeholder {
   font-weight: 600;
 }
@@ -185,6 +202,7 @@ body {
     display: flex;
     align-items: center;
     color : var(--color-white);
+    margin-right: 0px;
   }
   
   .main__container .details__container .details h1{
